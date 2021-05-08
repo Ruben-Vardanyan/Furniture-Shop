@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Shop" content="FrontPage.By.Ruben.Vardanyan">
+    <meta name="Furniture" content="FrontPage.By.Ruben.Vardanyan">
+    
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="img/dimond.png" rel="shortcut icon" type="image/x-icon" />
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .b25{
+        background: #252525;
+      }
+      .b1{
+        background: #1b1b1b;
+      }
+      .outlineNone{
+        outline: none !important;
+        border:none;
+        outline: none;
+      }
+      .ab:hover img{
+         
+          opacity: 0.9;
+         
+      }
+      .a:hover img{
+       
+      }
+      .aBord-none:hover img{
+        transition: 0.3s ease-in-out;
+          transform: scale(1.05,1.05);
+         
+      }
+      .gotopbtn{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 4.5%;
+        right: 5%;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        z-index: 15
+      }
+      .img-sizeXY{
+        max-width: 600px !important;
+        min-width: 300px !important;
+        min-height: 250px !important;
+
+      }
+      .img-size_x_y{
+        max-width: 200px !important;
+        min-height: 40px !important;
+      }
+      .bordMy{
+        border:1px solid #252525 !important;
+        border-radius: 0 !important;
+        color: #252525;
+      }
+    </style>
+    <title>Diamond furniture</title>
+  </head>
+  <body id="body-start">
+<!-- header -->   
+    <div class="container-fluid">
+            <div class="row align-items-center p-2 b25 text-light">
+          <div class="col-md-3  d-none d-md-block h6"> (+374) 000-00-00-00</div>
+          <div class="col-md-3  d-none d-md-block h5 text-center"> Welcome to our store</div>
+          <div class="col-6 col-md-2  d-block"> 
+              <select class="custom-select bg-dark text-white" style="border: none;">
+                <option selected>USD</option>
+                <option value="1">RUB</option>
+                <option value="2">AMD</option>
+              </select>
+          </div>
+          <div class=" col-6 col-md-2 d-block">
+               <select class="custom-select bg-dark text-white" style="border: none;">
+                  <option selected>EN</option>
+                  <option value="1">RU</option>
+                  <option value="2">AM</option>
+              </select>
+          </div>
+          <div class="col-md-2 col-lg-2 d-none d-md-block  ">
+           <button type="button" class="btn btn-outline-dark b25 text-white float-right">
+                Wishlist <span class="badge badge-light">0</span>
+           </button>
+          </div>
+         
+      </div>
+
+    <div class="row b1  align-items-center p-1  text-light">
+      <div class="col-6 col-md-2 ">
+        <a href="index.html" class="link ml-1"><img src="img/dimond.png" alt="" loading="lazy" width="40" height="40"></a>
+      </div>
+      <div class="col-md-8  d-none d-md-block ">
+        <form class="form-inline float-right mr-3">
+        <input  class="form-control mr-sm-2 bg-dark border-dark text-danger btn-outline-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn b1  btn-outline-dark my-2 my-sm-0  text-white" type="submit">Search</button>
+      </form>
+      </div>
+      <div class="col-6 col-md-2 pr-3 ">
+         <div class="dropdown float-right ">
+          <button class="btn b1 text-white dropdown-toggle  btn-outline-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My account
+          </button>
+          <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal">Login</a>
+            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#staticBackdrop">Register</a>
+            <a class="dropdown-item" href="myOrders.html">My Orders</a>
+            <a class="dropdown-item" href="setting.html">Account Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- by Ruben Vardanyan -->
+<div class="row ">
+  <div class="col-12 p-0">
+         <nav class="navbar navbar-expand-xl navbar-dark b25">
+  
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto  ">
+
+     
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="index.html#depart">Shop by Department</a>
+          <a class="dropdown-item" href="index.html#special">Special Offers</a>
+          <a class="dropdown-item" href="index.html#newOffers">New</a>
+          <a class="dropdown-item" href="index.html#weTogether">We're in this together</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Shipping</a>
+          <a class="dropdown-item" href="#">Term & Conditions</a>
+          <a class="dropdown-item" href="#">About Company</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact
+        </a>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Contact Us</a>
+          <a class="dropdown-item" href="#">Live chat</a>
+        </div>
+      </li>
+       
+    </ul>
+    
+  </div>
+</nav>
+  </div>     
+</div> 
+    </div>
+<!-- header -->
+ <!-- by Ruben Vardanyan -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title  text-warning" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/x.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body  b25 text-light">
+       <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-outline-warning btn-block">Log in</button>
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+ <!-- by Ruben Vardanyan -->
+<!-- Modal Register -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="staticBackdropLabel">Register</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/x.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body b25 text-light">
+          <form>
+        <div class="form-group ">
+          <label for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control " id="exampleInputEmail3" aria-describedby="emailHelp">
+          
+        </div>
+         <div class="form-group">
+          <label for="exampleInputName1">Name</label>
+          <input type="text" class="form-control  " id="exampleInputName1" aria-describedby="nameHelp">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword3">Password</label>
+          <input type="password" class="form-control " id="exampleInputPassword3">
+        </div>
+        
+        <button type="submit" class="btn btn-outline-warning btn-block">Sign up</button>
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- end header / login / register -->
+ <!-- by Ruben Vardanyan -->
+<!-- content start -->
+<!-- Breadcrumb start -->
+<nav aria-label="breadcrumb m-0 ">
+  <ol class="breadcrumb  b1 m-0"  style="border-radius: 0 !important">
+    <li class="breadcrumb-item"><a href="product.html" class="text-warning">Furniture Name</a></li>
+    <li class="breadcrumb-item"><a href="cart.html" class="text-warning">Cart</a></li>
+    <li class="breadcrumb-item active text-light" aria-current="page">Checkout</li>
+  </ol>
+</nav>
+<!-- Breadcrumb end -->
+<h3 class="bg-warning text-dark d-flex align-items-center justify-content-center justify-content-md-start pl-0 pl-md-5 m-0 py-1">Checkout</h3>
+<div class="container mb-5">
+   <p class="b25 text-center text-light h5 m-0 p-2" style="border:5px solid #ffc107;border-width: 0px 5px 5px 5px; border-radius:0 0 20px 20px">Complete Or Make Changes</p>
+   <form class="mt-3 px-md-5">
+    <p class="text-center h5 m-0 p-2" style="border-radius: 20px;color: #252525">Billing address</p>
+     <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control bordMy" placeholder="First Name*" value="Ruben">
+        </div>
+        <div class="form-group col-md-6">
+          
+          <input type="text" class="form-control bordMy" placeholder="Second Name*" value="Vardanyan">
+        </div>
+      </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="email" class="form-control bordMy"  placeholder="Email*" value="ruben.vardanyan1.y@tumo.org">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="password" class="form-control bordMy"  placeholder="Password*" value="helloworld">
+        </div>
+      </div>
+     
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+           <input type="text" class="form-control bordMy mt-2" id="inputAddress" placeholder="Phone" value="+37400000000">
+           <input type="text" class="form-control bordMy mt-2" id="inputAddress" placeholder="The number of the discount coupon" value="#1235">
+           <input type="text" class="form-control bordMy mt-2" id="inputAddress" placeholder="CVV*" value="2548">
+           <p class="p-2 m-0 text-center font-weight-bold">Free shipping</p>
+           <select class="custom-select  bordMy">
+               <option >Sipping Adress*</option>
+               <option selected>Armenia (Yerevan)</option>
+               <option value="1">USA</option>
+               <option value="2" >Russia</option>
+          </select>
+          <select class="custom-select  bordMy mt-2">
+               <option >Pay By*</option>
+               <option selected>Pay Immediately</option>
+               <option value="1">Pay Monthly</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+           <div class=" mx-auto  p-3 my-1" style="width: 280px; border-radius: 10px; border:3px solid #000">
+
+             <samp class="h6 d-block text-right m-0 font-weight-bold">CREDIT CARD</samp>
+             <img src="img/chip.png" class="img-fluid w-25" >
+             <img src="img/cards.jpg" class="img-fluid">
+             
+             <select class="custom-select mt-2" style="border: none;">
+               <option ><samp class="h5 d-block text-center py-1">Your Numbers</samp></option>
+               <option value="0"><samp class="h5 d-block text-center py-1">0000 0000 0000 0000</samp></option>
+               <option value="1" selected><samp class="h5 d-block text-center py-1">2222 2222 2222 2222</samp></option>
+
+             </select>
+
+
+           </div>
+        </div>
+       
+      </div>
+      
+      <div class="my-5 mx-auto" style="max-width: 300px">
+        <a class="text-uppercase nav-link btn b25 font-weight-bold text-warning" href="place.html">Place order</a>
+      </div>
+   </form>
+</div>
+
+
+
+
+
+
+
+ <!-- by Ruben Vardanyan -->
+<!-- footer start -->
+<div class="container-fluid">
+    <div class="row text-center b25 text-light text-uppercase pt-1">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">contact us</a> 
+      </div>
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">Live chat</a> 
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">shipping</a>
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">term & conditions</a> 
+      </div>
+       
+    </div>
+
+    <div class="row b25 text-center">
+     
+     
+     
+      
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="index.html#body-start" class="text-decoration-none text-light">Home</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#depart" class="text-decoration-none text-light">Shop by Department</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#special" class="text-decoration-none text-light">Special Offers</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#newOffers" class="text-decoration-none text-light">New</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#weTogether" class="text-decoration-none text-light">We're in this together</a></li>
+        </ul>
+      </div>
+       
+       
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="#" class="text-decoration-none text-light">About</a></li>
+         
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">About Company</a></li>
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Help Center</a></li> 
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Home Ideas</a></li> 
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Furniture Protection Plan</a></li>
+        </ul>
+      </div>
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="#" class="text-decoration-none text-light">Contact</a></li>
+          <li class="list-group-item text-light b25">Gmail: ruben.vardanyan1.y@tumo.org</li>
+          <li class="list-group-item text-light b25">Phone: (+374) 000-00-00-00</li>
+        
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row b25 text-light">
+      <div class="col-12 text-center pt-3 pb-1">
+        <a href="#"> <img  class=" mr-2 ml-2" src="img/face.png" loading="lazy" width="30" height="30"></a>
+       <a href="#"><img  class=" mr-2 ml-2" src="img/insta.png" loading="lazy" width="30" height="30"></a>
+        <a href="#"><img  class=" mr-2 ml-2" src="img/youtube.png"  loading="lazy" width="30" height="30"></a>
+        <a href="#"><img class=" mr-2 ml-2" src="img/twitt.png" loading="lazy" width="30" height="30"></a>
+        
+      </div>
+      <div class="col-12 text-center pt-1 pb-3">
+        &copy; 
+        <a href="https://codepen.io/ruben-vardanyan/full/LYYPwjm" class="text-light" target="_blank">Ruben Vardanyan</a>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+<!-- scroll go top start -->
+<a id="myBtn" class="gotopbtn" href="#body-start"><img src="img/scroll.png" width="50" height="50" loading="lazy"></a>
+<!-- scroll end -->
+ <!-- by Ruben Vardanyan -->
+<!-- loading start -->
+<div class="loader-wrapper"  >
+  <div class="loader-inner">
+     <div class="st1"></div>
+     <div class="st2"></div>
+     <div class="st3"></div>
+  </div>
+</div>
+<!-- loading end -->
+ <!-- by Ruben Vardanyan -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+      //  by Ruben Vardanyan 
+      //scroll Top 
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+       mybutton.style.display = "none";
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>
+ <!-- by Ruben Vardanyan -->

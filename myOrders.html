@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Shop" content="FrontPage.By.Ruben.Vardanyan">
+    <meta name="Furniture" content="FrontPage.By.Ruben.Vardanyan">
+    
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="img/dimond.png" rel="shortcut icon" type="image/x-icon" />
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .b25{
+        background: #252525;
+      }
+      .b1{
+        background: #1b1b1b;
+      }
+      .outlineNone{
+        outline: none !important;
+        border:none;
+        
+      }
+      .ab:hover img{
+         
+          opacity: 0.9;
+         
+      }
+      .a:hover img{
+       
+      }
+      .aBord-none:hover img{
+        transition: 0.3s ease-in-out;
+          transform: scale(1.05,1.05);
+         
+      }
+      .gotopbtn{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 4.5%;
+        right: 5%;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        z-index: 15
+      }
+      .img-sizeXY{
+        max-width: 600px !important;
+        min-width: 300px !important;
+        min-height: 250px !important;
+
+      }
+      .img-size_x_y{
+        max-width: 200px !important;
+        min-height: 40px !important;
+      }
+    </style>
+    <title>Diamond furniture</title>
+  </head>
+  <body id="body-start">
+<!-- header -->   
+    <div class="container-fluid">
+      <div class="row align-items-center p-2 b25 text-light">
+          <div class="col-md-3  d-none d-md-block h6"> (+374) 000-00-00-00</div>
+          <div class="col-md-3  d-none d-md-block h5 text-center"> Welcome to our store</div>
+          <div class="col-6 col-md-2  d-block"> 
+              <select class="custom-select bg-dark text-white" style="border: none;">
+                <option selected>USD</option>
+                <option value="1">RUB</option>
+                <option value="2">AMD</option>
+              </select>
+          </div>
+          <div class=" col-6 col-md-2 d-block">
+               <select class="custom-select bg-dark text-white" style="border: none;">
+                  <option selected>EN</option>
+                  <option value="1">RU</option>
+                  <option value="2">AM</option>
+              </select>
+          </div>
+          <div class="col-md-2 col-lg-2 d-none d-md-block  ">
+           <button type="button" class="btn btn-outline-dark b25 text-white float-right">
+                Wishlist <span class="badge badge-light">0</span>
+           </button>
+          </div>
+         
+      </div>
+
+    <div class="row b1  align-items-center p-1  text-light">
+      <div class="col-6 col-md-2 ">
+        <a href="index.html" class="link ml-1"><img src="img/dimond.png" alt="" loading="lazy" width="40" height="40"></a>
+      </div>
+      <div class="col-md-8  d-none d-md-block ">
+        <form class="form-inline float-right mr-3">
+        <input  class="form-control mr-sm-2 bg-dark border-dark text-danger btn-outline-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn b1  btn-outline-dark my-2 my-sm-0  text-white" type="submit">Search</button>
+      </form>
+      </div>
+      <div class="col-6 col-md-2 pr-3 ">
+         <div class="dropdown float-right ">
+          <button class="btn b1 text-white dropdown-toggle  btn-outline-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My account
+          </button>
+          <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal">Login</a>
+            <a class="dropdown-item" href="#"   data-toggle="modal" data-target="#staticBackdrop">Register</a>
+            <a class="dropdown-item" href="myOrders.html">My Orders</a>
+            <a class="dropdown-item" href="setting.html">Account Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- by Ruben Vardanyan -->
+<div class="row ">
+  <div class="col-12 p-0">
+         <nav class="navbar navbar-expand-xl navbar-dark b25">
+  
+  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto  ">
+
+     
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="index.html#depart">Shop by Department</a>
+          <a class="dropdown-item" href="index.html#special">Special Offers</a>
+          <a class="dropdown-item" href="index.html#newOffers">New</a>
+          <a class="dropdown-item" href="index.html#weTogether">We're in this together</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Shipping</a>
+          <a class="dropdown-item" href="#">Term & Conditions</a>
+          <a class="dropdown-item" href="#">About Company</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown text-center mx-0 mx-lg-3">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Contact
+        </a>
+        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Contact Us</a>
+          <a class="dropdown-item" href="#">Live chat</a>
+        </div>
+      </li>
+       
+    </ul>
+    
+  </div>
+</nav>
+  </div>     
+</div> 
+    </div>
+<!-- header -->
+ <!-- by Ruben Vardanyan -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title  text-warning" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/x.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body  b25 text-light">
+       <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-outline-warning btn-block">Log in</button>
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+ <!-- by Ruben Vardanyan -->
+<!-- Modal Register -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content b1">
+      <div class="modal-header">
+        <h5 class="modal-title text-warning" id="staticBackdropLabel">Register</h5>
+        <button type="button" class="close outlineNone" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/x.png" width="25" height="25" loading="lazy"></span>
+        </button>
+      </div>
+      <div class="modal-body b25 text-light">
+          <form>
+        <div class="form-group ">
+          <label for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control " id="exampleInputEmail3" aria-describedby="emailHelp">
+          
+        </div>
+         <div class="form-group">
+          <label for="exampleInputName1">Name</label>
+          <input type="text" class="form-control  " id="exampleInputName1" aria-describedby="nameHelp">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword3">Password</label>
+          <input type="password" class="form-control " id="exampleInputPassword3">
+        </div>
+        
+        <button type="submit" class="btn btn-outline-warning btn-block">Sign up</button>
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- end header / login / register -->
+ <!-- by Ruben Vardanyan -->
+<!-- content start -->
+<!-- heading and price -->
+<div class="container-fluid ">
+  <div class="row bg-warning">
+    <div class="col-12  text-dark d-flex align-items-center justify-content-center justify-content-md-start pl-0 pl-md-5"> 
+        <h3 class="d-flex  ">My Account</h3>     
+    </div>
+  </div>
+</div>
+<!-- heading  end -->
+<!-- About me start -->
+<div class="container-fluid mt-2">
+  <div class="row">
+    <div class="col-12 col-md-4 col-lg-3">
+      
+           <div class="card border-0">
+            <div class="d-flex justify-content-center">
+               <img src="img/R.png" class="card-img-top rounded-circle text-center img-fluid" style="max-width: 150px;"  alt="..." >
+            </div>
+             
+              <div class="card-body text-center">
+                <h5 class="card-title">Ruben Vardanyan</h5> 
+               
+                 
+                  
+                  
+                  <div class="d-flex justify-content-center">
+                   <ul class="list-group border-0">
+                   
+                    <li class="list-group-item border-0 d-flex align-items-center">
+                       <img src="img/phone.png" height="30" width="30"> 
+                       <p class="m-0 pl-1">+374 00 00 00 00</p>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center">
+                       <img src="img/mail.png" height="30" width="30"> 
+                       <p class="m-0 pl-1">ruben.vardanyan1.y@tumo.org</p>
+                    </li>
+                    <li class="list-group-item border-0 d-flex align-items-center">
+                      <img src="img/loc.png" height="30" width="30"> 
+                      <p class="m-0 pl-1">Armenia ( Yerevan )</p>
+                    </li>
+                  </ul>
+                  </div>  
+                  <!-- collapse -->
+                  <div class="accordion mt-2 " id="accordionExample">
+                     <div class="card-header p-0" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn nav-link btn-block text-left text-dark text-center border-0 btn-outline-light font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Menu
+                        </button>
+                      </h2>
+                    </div>
+                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                       <div class="d-flex justify-content-center">
+                       <ul class="list-group border">
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#orders">My Orders</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#wishlist">Wishlist</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#recently">My recently viewed</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#favourite">My favourites</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#card">My credit card and coupons</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="#messag">Messages</a></li>
+                        <li class="list-group-item border-0 p-0"><a class="text-dark nav-link" href="setting.html">Settings</a></li>
+                      </ul>
+                      </div>  
+                     </div>
+                  </div>
+                 <!-- collapse end -->
+                
+               
+              </div>
+          </div>  
+    </div>
+    <div class="col-12 col-md-8 col-lg-9 ">
+      <!-- first table start -->
+      <h5 class="text-center" id="orders">My Orders</h5>
+  <div class="table-responsive-lg">
+    <table class="table"> 
+      <thead>
+        <tr class="text-center">
+          <th scope="col">Furniture</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Monthly</th>
+          <th scope="col">Cancel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="alert">
+          <td><a href="product.html"><img src="img/ex1.png" class="img-size_x_y border-0 " alt="..." ></a></td>
+          <td>Sommerford Panel Bed with Storage</td>
+          <td>$1333,4 - $1589.49</td>
+          <td>or $27 per month for 60 months*</td>
+          <td>
+            <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+        <tr class="alert">
+          <td><a href="product.html"><img src="img/ex1.png" class="img-size_x_y border-0 " alt="..." ></a></td>
+          <td>Sommerford Panel Bed with Storage</td>
+          <td>$1333,4 - $1589.49</td>
+          <td>or $27 per month for 60 months*</td>
+          <td>
+            <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- first table end -->
+  <!-- second table start -->
+  <h5 class="text-center" id="wishlist">Wishlist</h5>
+  <div class="table-responsive-lg">
+    <table class="table"> 
+      <thead>
+        <tr class="text-center">
+          <th scope="col">Furniture</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Monthly</th>
+          <th scope="col">Cancel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="alert">
+          <td><a href="product.html"><img src="img/ex1.png" class="img-size_x_y border-0 " alt="..." ></a></td>
+          <td>Sommerford Panel Bed with Storage</td>
+          <td>$1333,4 - $1589.49</td>
+          <td>or $27 per month for 60 months*</td>
+          <td>
+            <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+        <tr class="alert">
+          <td><a href="product.html"><img src="img/ex1.png" class="img-size_x_y border-0 " alt="..." ></a></td>
+          <td>Sommerford Panel Bed with Storage</td>
+          <td>$1333,4 - $1589.49</td>
+          <td>or $27 per month for 60 months*</td>
+          <td>
+            <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+         <tr class="alert">
+          <td><a href="product.html"><img src="img/ex1.png" class="img-size_x_y border-0 " alt="..." ></a></td>
+          <td>Sommerford Panel Bed with Storage</td>
+          <td>$1333,4 - $1589.49</td>
+          <td>or $27 per month for 60 months*</td>
+          <td>
+            <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- second table end -->
+  <!-- recently start -->
+   <h5 class="text-center" id="recently">My recently viewed</h5>
+   <div class="row justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4">
+          <a href="product.html" class="ab text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="img/ex1.png" class="card-img-top border-0 " alt="..." >
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sommerford Panel Bed with Storage</h5>   
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$1333,4 - $1589.49</li>
+                    <li class="list-group-item">or $27 per month for 60 months*</li>
+                  </ul>
+                </div>
+            </div>
+          </a> 
+       </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+          <a href="product.html" class="ab text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="img/ex1.png" class="card-img-top border-0 " alt="..." >
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sommerford Panel Bed with Storage</h5>   
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">$1333,4 - $1589.49</li>
+                    <li class="list-group-item">or $27 per month for 60 months*</li>
+                  </ul>
+                </div>
+            </div>
+          </a> 
+
+       </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <a href="product.html" class="ab text-secondary nav-link ">
+                   <div class="card border-0">
+                      <img src="img/ex1.png" class="card-img-top border-0 " alt="..." >
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Sommerford Panel Bed with Storage</h5>   
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">$1333,4 - $1589.49</li>
+                          <li class="list-group-item">or $27 per month for 60 months*</li>
+                        </ul>
+                      </div>
+                  </div>
+                </a> 
+       </div>
+   </div>
+   <h5 class="d-flex align-items-center justify-content-center" id="favourite">My Favorites <img src="img/star.png" width="45" height="45"></h5>
+   <div class="row justify-content-center">
+       <div class="col-12 col-sm-6 col-lg-4">
+                <a href="product.html" class="ab text-secondary nav-link ">
+                   <div class="card border-0">
+
+                      <img src="img/ex1.png" class="card-img-top border-0 " alt="..." >
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Sommerford Panel Bed with Storage</h5>   
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">$1333,4 - $1589.49</li>
+                          <li class="list-group-item">or $27 per month for 60 months*</li>
+                        </ul>
+                      </div>
+                  </div>
+
+                </a> 
+                
+       </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+                <a href="product.html" class="ab text-secondary nav-link ">
+                   <div class="card border-0">
+                    
+                      <img src="img/ex1.png" class="card-img-top border-0 " alt="..." >
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Sommerford Panel Bed with Storage</h5>   
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">$1333,4 - $1589.49 </li>
+                          <li class="list-group-item">or $27 per month for 60 months*</li>
+
+                        </ul>
+                      </div>
+                  </div>
+                </a> 
+       </div>
+   </div>
+
+    </div>
+  </div>
+</div>
+<!-- About me end -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <h4 class="text-center" id="card">My credit card and coupons</h4>
+
+     <div class=" mx-auto  p-3 my-3" style="width: 280px; border-radius: 10px; border:3px solid #000">
+
+       <samp class="h6 d-block text-right m-0 font-weight-bold">CREDIT CARD</samp>
+       <img src="img/chip.png" class="img-fluid w-25" >
+       <img src="img/cards.jpg" class="img-fluid">
+       
+       <select class="custom-select mt-2" style="border: none;">
+         <option selected><samp class="h5 d-block text-center py-1">Your Numbers</samp></option>
+         <option value="1"><samp class="h5 d-block text-center py-1">0000 0000 0000 0000</samp></option>
+         <option value="2" ><samp class="h5 d-block text-center py-1">2222 2222 2222 2222</samp></option>
+       </select>
+
+
+     </div>
+
+     <div class="my-2 mx-auto d-flex bg-warning p-2 justify-content-around align-items-center" style="max-width: 500px; border-radius: 10px;border:3px solid #000">
+       <div class="display-4  font-weight-bold">40%</div>
+       <div>
+         <div class="h5 text-uppercase text-center  font-weight-bold">In store & online</div>
+         <div class=" text-uppercase text-center font-weight-bold" style="font-size: 80%;">only one regular price item <samp>"ID #5878"</samp></div>
+       </div>
+     </div>
+     <div class="my-2 mx-auto d-flex b1 p-2 text-white justify-content-around align-items-center" style="max-width: 500px; border-radius: 10px;border:3px solid #1b1b1b">
+       <div class="display-4  font-weight-bold">25%</div>
+       <div>
+         <div class="h5 text-uppercase text-center  font-weight-bold">In store & online</div>
+         <div class=" text-uppercase text-center font-weight-bold"  style="font-size: 80%;">only one $800 and high price item <samp>"ID #1235"</samp></div>
+       </div>
+     </div>
+
+
+
+    </div>
+    <div class="col-12 col-md-6">
+      <h4 class="text-center" id="messag">Messages</h4>
+      <div class="alert bg-warning" role="alert">
+        <h4 class="alert-heading d-flex align-items-center justify-content-between">Thank you for your purchase!
+             <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </h4>
+        <p>Dear customer, you get a 40% discount coupon.</p>
+
+        <hr>
+        
+      </div>
+      <div class="alert bg-warning" role="alert">
+        <h4 class="alert-heading d-flex align-items-center justify-content-between">Thank you for your purchase!
+             <button type="button" class="close  outlineNone" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </h4>
+        <p >Dear customer, you get a 25% discount coupon,"ONLY ONE $800 AND HIGH PRICE ITEM"!</p>
+
+        <hr>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+ <!-- by Ruben Vardanyan -->
+<!-- footer start -->
+<div class="container-fluid">
+    <div class="row text-center b25 text-light text-uppercase pt-1">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">contact us</a> 
+      </div>
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">Live chat</a> 
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">shipping</a>
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link text-light h5">term & conditions</a> 
+      </div>
+       
+    </div>
+
+    <div class="row b25 text-center">
+     
+     
+     
+      
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="index.html#body-start" class="text-decoration-none text-light">Home</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#depart" class="text-decoration-none text-light">Shop by Department</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#special" class="text-decoration-none text-light">Special Offers</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#newOffers" class="text-decoration-none text-light">New</a></li>
+          <li class="list-group-item text-light b25"><a href="index.html#weTogether" class="text-decoration-none text-light">We're in this together</a></li>
+        </ul>
+      </div>
+       
+       
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="#" class="text-decoration-none text-light">About</a></li>
+         
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">About Company</a></li>
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Help Center</a></li> 
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Home Ideas</a></li> 
+          <li class="list-group-item text-light b25"><a href="#" class="text-decoration-none text-light">Furniture Protection Plan</a></li>
+        </ul>
+      </div>
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light b1 font-weight-bold"><a href="#" class="text-decoration-none text-light">Contact</a></li>
+          <li class="list-group-item text-light b25">Gmail: ruben.vardanyan1.y@tumo.org</li>
+          <li class="list-group-item text-light b25">Phone: (+374) 000-00-00-00</li>
+        
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row b25 text-light">
+      <div class="col-12 text-center pt-3 pb-1">
+        <a href="#"> <img  class=" mr-2 ml-2" src="img/face.png" loading="lazy" width="30" height="30"></a>
+       <a href="#"><img  class=" mr-2 ml-2" src="img/insta.png" loading="lazy" width="30" height="30"></a>
+        <a href="#"><img  class=" mr-2 ml-2" src="img/youtube.png"  loading="lazy" width="30" height="30"></a>
+        <a href="#"><img class=" mr-2 ml-2" src="img/twitt.png" loading="lazy" width="30" height="30"></a>
+        
+      </div>
+      <div class="col-12 text-center pt-1 pb-3">
+        &copy; 
+        <a href="https://codepen.io/ruben-vardanyan/full/LYYPwjm" class="text-light" target="_blank">Ruben Vardanyan</a>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+<!-- scroll go top start -->
+<a id="myBtn" class="gotopbtn" href="#body-start"><img src="img/scroll.png" width="50" height="50" loading="lazy"></a>
+<!-- scroll end -->
+ <!-- by Ruben Vardanyan -->
+<!-- loading start -->
+<div class="loader-wrapper"  >
+  <div class="loader-inner">
+     <div class="st1"></div>
+     <div class="st2"></div>
+     <div class="st3"></div>
+  </div>
+</div>
+<!-- loading end -->
+ <!-- by Ruben Vardanyan -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+      //  by Ruben Vardanyan 
+      //scroll Top 
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+       mybutton.style.display = "none";
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  </body>
+</html>
+ <!-- by Ruben Vardanyan -->
